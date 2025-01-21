@@ -65,7 +65,56 @@ magician.teleport();
 // 좋아요 누르기:
 
 const youtube = {
-    id : lidso
-    sub :   
+    subscribeChannels:["슈카월드","타요","G무비"],
+    likedChannels: ["슈카월드", "YTN"],
+    subscribe: function (newChannel) {
+        this.subscribeChannels.push(newChannel);
+    },
+    like: function (likedChannel) {
+        this.subscribeChannels.push(likedChannel);
+    }, 
+};
+
+// car 오브젝트
+
+// 자동차 이름
+// 자동차 속도 올리기
+// 자동차 속도 내리기
+// 자동차 브레이크 밟기
+// 자동차 현재 속도 나타내기
+
+const car = {
+    name:"모닝",
+    speed: 0,
+    speedup:function () {
+        this.speed = this.speed + 1;
+    },
+    speedDown: function () {
+        this.speed = this.speed == 0 ? 0 : this.speed - 1 : 0;
+    },
+    break: function () {
+        this.speed = 0;
+
+    },
+    printNowSpeed: function () {
+        console.log(`현재 속도:${this.speed}`)
+    }
+};
+
+// result: 0
+// history: 계산의 모든 결과를 가지고 있음
+// add 함수 있음 - result + x
+// minus 함수 있음 - result = x
+// divide 함수 있음 [단 0 들어오면 에러]
+// square(제곱) 함수 있음
+// clear 함수 있음 - result 0으로 초기화
+// showHistory 함수 있음 - history 결과 보여줌
+// 현균이 함수 있음 - 뭐 이렇게 많아 alert으로 보여줌
+
+const calculator = {
+    result=0,
+    add: function[0]
+    
 }
+
 
